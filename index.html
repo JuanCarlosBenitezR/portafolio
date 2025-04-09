@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Alejandra Olazagasti" />
+		<meta name="description" content="No más de 165 caracteres" />
+		<meta
+			name="keywords"
+			content="palabra clave 1, palabra clave 2, palabra clave 3"
+		/>
+		<meta name="theme-color" content="#09f" />
+		<!-- Iconos  -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Fuente -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Portafolio</title>
+		<link rel="icon" href="assets/img/logo.png" type="image/png" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="module" src="assets/js/main.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init({
+					publicKey: '1jnUAW9BnrKqaU-cz',
+				});
+			})();
+		</script>
+	</head>
+
+	<body>
+		<!-- Loader -->
+		<div class="loader flex--container">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 237 268"
+				class="loader__logo"
+			>
+				<path
+					fill="currentColor"
+					d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z"
+				></path>
+			</svg>
+		</div>
+		<header class="header">
+			<nav class="navbar grid--container flex--container">
+				<a class="navbar__logo flex--container" href="#about"
+					><i class="bx bxs-user"></i>Juan Carlos</a
+				>
+
+				<div id="nav" class="navbar__menu">
+					<a href="#close"
+						><i class="bx bx-x btn__close navbar__icon flex--container"></i
+					></a>
+
+					<ul class="navbar__list flex--container">
+						<li class="navbar__item">
+							<a class="navbar__link active" href="#home">Home</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#about">About me</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#skills">Skills</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#projects">Portfolio</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="navbar__toggles flex--container">
+					<div class="navbar__toggle--darkmode flex--container">
+						<input
+							type="checkbox"
+							name="color-scheme"
+							id="darkmode-toggle"
+							class="navbar__toggle--darkmode-input"
+						/>
+						<label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+							<i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+							<i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+						</label>
+					</div>
+					<div class="flex--container">
+						<a href="index-es.html" class="button_languageEs"
+							>Cambiar a español</a
+						>
+					</div>
+				</div>
+				<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home" class="home">
+				<i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+				<i
+					class="bx bxl-javascript home__layer home__layer--2"
+					data-speed="5"
+				></i>
+				<i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+				<i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+				<i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+				<i
+					class="bx bxl-tailwind-css home__layer home__layer--6"
+					data-speed="-2"
+				></i>
+				<i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+				<i
+					class="bx bxl-typescript home__layer home__layer--8"
+					data-speed="-2"
+				></i>
+				<i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+				<i
+					class="bx bxl-graphql home__layer home__layer--10"
+					data-speed="-7"
+				></i>
+				<i
+					class="bx bx-code-alt home__layer home__layer--11"
+					data-speed="-5"
+				></i>
+				<div class="home__container grid--container">
+					<div class="home__image">
+						<img
+							src="assets/img/profile.png"
+							alt="profile photo"
+							title="Juan Carlos Benitez"
+						/>
+					</div>
+
+					<ul class="home__social flex--container">
+						<li class="home__social-item">
+							<a
+								class="home__social-link"
+								href="www.linkedin.com/in/juan-carlos-benitez-rodriguez-53825335a"
+								target="_blank"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a
+								class="home__social-link"
+								href="https://wa.me/qr/LUUR3BBIPBS5K1"
+								target="_blank"
+								><i class="bx bxl-whatsapp"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a
+								class="home__social-link"
+								href="https://github.com/JuanCarlosBenitezR"
+								target="_blank"
+								><i class="bx bxl-github"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="" target="_blank"
+								><i class="bx bx-envelope"></i
+							></a>
+						</li>
+					</ul>
+
+					<div class="home__info">
+						<h1 class="home__title">Welcome</h1>
+
+						<p class="home__description">
+							I'm Software enginner, focus on web development
+						</p>
+					</div>
+
+					<div class="home__buttons">
+						<a
+							class="btn btn--primary"
+							href="assets\img\CVJuanCarlosBenitez.pdf"
+							title="Descargar mi CV"
+							download="my_cv"
+							rel="noreferrer nofollow"
+						>
+							Download CV
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="about section">
+				<h2 class="section__title">About me</h2>
+
+				<div class="about__container grid--container">
+					<p class="about__description">
+						I am a software engineer, graduated in 2021. I have experience
+						programming in Java, JavaScript, and C#. I specialize in web
+						development, with experience using HTML and CSS, as well as handling
+						JSON files and working with frameworks such as Vue and Angular.
+					</p>
+
+					<div class="about__cards flex--container">
+						<!--Card 1 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/aboutMe.jpg"
+								alt="Working with Java"
+								title="Working with Java"
+							/>
+						</div>
+						<!--Card 2 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/me_1.jpg"
+								alt="Start as enginner"
+								title="Juan Carlos Benitez"
+							/>
+						</div>
+						<!--Card 3 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/ProyectoPokemon.jpg"
+								alt="Web development"
+								title="Web development"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills" class="skills section">
+				<h2 class="section__title">Skills</h2>
+
+				<div class="skills__container grid--container">
+					<p class="skills__description flex--container">
+						I have experience in web development using JavaScript, the Vue.js
+						framework, and its Material Design implementation, Vuetify. I also
+						have development experience in Java, both for web and desktop
+						applications.
+					</p>
+
+					<div class="skills__wrapper flex--container">
+						<div class="skills__cards flex--container">
+							<!--Card 0_1 -->
+							<details class="skills__cards-container" name="moreInfo" open>
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-java flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Java</h3>
+
+									<p class="skills__card-description">
+										It is an object-oriented programming language, with
+										applications ranging from games to mobile apps, including
+										web and enterprise software. My skills in this language are
+										primarily focused on backend development and enterprise
+										software.
+									</p>
+								</div>
+							</details>
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-c-plus-plus flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">C#</h3>
+
+									<p class="skills__card-description">
+										It is a high-level, object-oriented language used for cloud
+										services development, web applications, and backend
+										services. My skills in this language involve desktop
+										software development and video game creation.
+									</p>
+								</div>
+							</details>
+							<!--Card 1 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-html5 flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">HTML</h3>
+
+									<p class="skills__card-description">
+										It is a language used for building web pages. It also allows
+										navigation between pages, user interaction, and displaying
+										information in an efficient, organized, and compatible
+										manner. My skills in this language include the development
+										of multiple websites, both with and without API consumption.
+									</p>
+								</div>
+							</details>
+							<!--Card 2 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-css3 flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">CSS3</h3>
+
+									<p class="skills__card-description">
+										It is a cascading style sheet language that allows
+										manipulation of the appearance and layout of elements
+										included in HTML files used to build a web page. My skills
+										in this language are focused on the styling and arrangement
+										of the web pages I create.
+									</p>
+								</div>
+							</details>
+							<!--Card 3 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-javascript flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Javascript</h3>
+
+									<p class="skills__card-description">
+										It is a programming language oriented toward implementing
+										functions on web pages. It is commonly used through the
+										implementation of frameworks, which allows for smoother
+										programming of the required features, such as Vue, React, or
+										Angular. My skills in its use are based on building
+										functionalities through these frameworks.
+									</p>
+								</div>
+							</details>
+							<!--Card 4 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-angular flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Angular</h3>
+
+									<p class="skills__card-description">
+										JavaScript framework that allows code to be structured in a
+										cleaner, more efficient, and faster way to create web
+										content and functionalities. My skills are based on the
+										management and improvement of an enterprise web platform
+									</p>
+								</div>
+							</details>
+							<!--Card 5 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-vuejs flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Vue</h3>
+
+									<p class="skills__card-description">
+										JavaScript framework focused on creating user interfaces; it
+										keeps the code simple and flexible, making it easy to
+										integrate into existing projects. My skills with this
+										framework are oriented toward building web pages with API
+										consumption and enterprise web administration platforms
+									</p>
+								</div>
+							</details>
+						</div>
+					</div>
+					<div class="skills__tags flex--container">
+						<h3 class="skills__tags-title">Soft Skills</h3>
+						<div class="skills__tags-container flex--container">
+							<span class="skills__tag">Teamworks habilities</span>
+							<span class="skills__tag">Self-taught</span>
+							<span class="skills__tag">Proactive</span>
+							<span class="skills__tag">Leadership</span>
+							<span class="skills__tag"
+								>Analytical and problem-solving skills</span
+							>
+							<span class="skills__tag">Strong communication skills</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="projects section">
+				<h2 class="section__title">Projects</h2>
+
+				<div class="projects__container grid--container">
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/project1.jpg"
+									alt="project 1"
+									title="Ecommerce Vanilla"
+								/>
+							</div>
+
+							<div class="projects__info">
+								<h3 class="projects__name">Project 1</h3>
+								<p class="projects__description">
+									This will be my first project
+								</p>
+
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										SEE DEMO
+									</button>
+									<button class="btn projects__button" type="button">
+										SEE CODE
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/project2.png"
+									alt="project 1"
+									title="Consumiendo API Pokemon con React"
+								/>
+							</div>
+
+							<div class="projects__info">
+								<h3 class="projects__name">Project 2</h3>
+								<p class="projects__description">
+									This will be my second project
+								</p>
+
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										SEE DEMO
+									</button>
+									<button class="btn projects__button" type="button">
+										SEE CODE
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/project3.jpg"
+									alt="project 1"
+									title="CRUD con React"
+								/>
+							</div>
+
+							<div class="projects__info">
+								<h3 class="projects__name">Project 3</h3>
+								<p class="projects__description">
+									This will be my third project
+								</p>
+
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										SEE DEMO
+									</button>
+									<button class="btn projects__button" type="button">
+										SEE CODE
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/project4.png"
+									alt="project 1"
+									title="Aplicación del tiempo con React"
+								/>
+							</div>
+
+							<div class="projects__info">
+								<h3 class="projects__name">Project 4</h3>
+								<p class="projects__description">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								</p>
+
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										SEE DEMO
+									</button>
+									<button class="btn projects__button" type="button">
+										SEE CODE
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="contact section">
+				<h2 class="section__title">Contact</h2>
+
+				<div class="contact__container grid--container">
+					<div class="contact__info">
+						<h3 class="contact__info-title">Contact information</h3>
+						<p class="contact__info-description">
+							Quick contact and personal attention
+						</p>
+
+						<address class="contact__info-data">
+							<div class="contact__info-item">
+								<i class="bx bxl-whatsapp"></i>
+
+								<span class="contact__info-number">
+									<a
+										href="https://wa.me/7721161847"
+										target="_blank"
+										rel="noreferrer nofollow"
+										>Send WhatsApp</a
+									>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bx-phone"></i>
+
+								<span class="contact__info-number">
+									<a
+										href="tel:+527721161847"
+										target="_blank"
+										rel="noreferrer nofollow"
+									>
+										+52 772 116 1847
+									</a>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bxs-envelope"></i>
+
+								<span class="contact__info-mail">
+									<a
+										id="mail"
+										href="mailto:juan_carlos_2609@hotmail.com"
+										target="_blank"
+										rel="noreferrer nofollow"
+									>
+										juan_carlos_2609@hotmail.com
+									</a>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bx-map"></i>
+
+								<span class="contact__info-map"> Pachuca, México </span>
+							</div>
+						</address>
+					</div>
+					<div class="contact__form">
+						<h3 class="contact__form-title">Send message</h3>
+						<form id="form" class="contact__form-container">
+							<div class="contact__form-group">
+								<!-- <label for="name" class="contact__form-label">Nombre</label> -->
+								<input
+									type="text"
+									id="name"
+									name="name"
+									class="contact__form-input"
+									placeholder="Name"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<!-- <label for="email" class="contact__form-label">Correo</label> -->
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="contact__form-input"
+									placeholder="Mail"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<!-- <label for="subject" class="contact__form-label">Asunto</label> -->
+								<input
+									type="text"
+									id="subject"
+									name="subject"
+									class="contact__form-input"
+									placeholder="Subject"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<!-- <label for="message" class="contact__form-label">Mensaje</label> -->
+								<textarea
+									id="message"
+									name="message"
+									cols="30"
+									rows="10"
+									class="contact__form-input"
+									placeholder="Message"
+								></textarea>
+							</div>
+							<dialog class="contact__form-modal" id="modal">
+								Form submitted successfully!
+								<button type="reset" id="btn_close-modal">Close</button>
+							</dialog>
+
+							<button type="submit" class="btn contact__form-button">
+								Send
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer section">
+			<div class="footer__container grid--container">
+				<div class="footer__info">
+					<h3 class="footer__title">Juan Carlos Benitez Rodriguez</h3>
+					<p class="footer__description">
+						I'm a software engineer, specialized in web development.
+					</p>
+				</div>
+
+				<div class="footer__social">
+					<h3 class="footer__title">Social media</h3>
+
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://www.facebook.com/share/1Ee2qrggQp/"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-facebook"></i
+							></a>
+						</li>
+
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://www.instagram.com/j.carlos.br26/"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-instagram"></i
+							></a>
+						</li>
+
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://x.com/JuanCarlosB0926"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-twitter"></i
+							></a>
+						</li>
+
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="www.linkedin.com/in/juan-carlos-benitez-rodriguez-53825335a"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<p class="footer__copy"><span></span>All rights reserved</p>
+		</footer>
+	</body>
+</html>
